@@ -22,7 +22,7 @@ export default function Header() {
     <header className="bg-white dark:bg-gray-900 shadow-md py-4 fixed w-full z-50">
       <div className="container mx-auto px-4 flex justify-between items-center">
         <Link href="/" className="text-xl font-bold">
-          Beray Büşra Koçarslan
+          Büşra Koçarslan
         </Link>
         
         {/* Masaüstü Navigasyon */}

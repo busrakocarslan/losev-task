@@ -10,13 +10,13 @@ export default function Hero() {
       <div className="container mx-auto px-4 md:flex md:items-center md:justify-between">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            Beray Büşra Koçarslan
+            Büşra Koçarslan
           </h1>
           <h2 className="text-2xl md:text-3xl text-blue-600 dark:text-blue-400 font-semibold mb-6">
             Full Stack Developer
           </h2>
           <p className="text-lg mb-8 max-w-lg">
-            Over 3+ years of experience in IT and more than 2+ years specializing in React, Node.js, and Next.js.
+            Over 3+ years of experience in IT and more than 2+ years specializing in React,Vue, Node.js, and Next.js.
           </p>
           
           <div className="flex space-x-4 mb-8">
