@@ -20,7 +20,7 @@ export default function Hero() {
         duration1={15}
         duration2={20}
       />
-      <div className="container mx-auto px-4 md:flex md:items-center md:justify-between relative z-10">
+      <div className="container mx-auto px-4 md:flex md:items-center md:justify-evenly relative z-10">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -72,7 +72,7 @@ export default function Hero() {
           </motion.div>
         </div>
         
-        <div className="md:w-1/2 flex justify-center md:justify-end">
+        <div className="md:w-1/2 flex justify-center">
         <motion.div 
           className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden"
           initial={{ opacity: 0, scale: 0.5 }}
