@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Beray Büşra Koçarslan | Full Stack Developer",
+  title: "Büşra Koçarslan | Full Stack Developer",
   description: "Full Stack Developer with expertise in React, Node.js, and Next.js",
 };
 

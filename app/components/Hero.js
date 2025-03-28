@@ -3,6 +3,8 @@
 import { useLanguage } from '../contexts/LanguageContext';
 import AnimatedBacground from './backgrounds/AnimatedBacground';
 import { motion } from 'framer-motion';
+import avatarImage from '../assets/avatarBK.jpg';
+import Image from 'next/image';
 
 export default function Hero() {
   const { t } = useLanguage();
@@ -10,8 +12,8 @@ export default function Hero() {
   return (
     <section id="about" className="pt-24 pb-16 min-h-screen flex items-center relative">
       <AnimatedBacground 
-        color1="rgba(150, 71, 110, 0.2)"  // Fusya tonları
-        color2="rgba(212, 33, 75, 0.2)"   // Koyu fusya
+         color1="rgba(67, 217, 173, 0.2)"  
+         color2="rgba(147, 51, 234, 0.2)"   
         size1={500}
         size2={400}
         blur={50}
@@ -28,25 +30,15 @@ export default function Hero() {
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
               Büşra Koçarslan
             </h1>
-            <h2 className="text-2xl md:text-3xl text-primary dark:text-primary-light font-semibold mb-6">
-              {t('hero.title')}
-            </h2>
+            <h2 className="text-2xl md:text-3xl font-semibold mb-6 text-[#872e5e] dark:text-[#bd89a5]">
+  {t('hero.title')}
+</h2>
             <p className="text-lg mb-8 max-w-lg text-gray-600 dark:text-gray-300">
               {t('hero.intro')}
             </p>
             
          
-            <div className="flex items-center space-x-6">
-              <motion.a
-                href="mailto:kocarslanbusrab@gmail.com"
-                className="text-gray-600 hover:text-primary dark:text-gray-400 dark:hover:text-primary-light transition-colors"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
-                </svg>
-              </motion.a>
+            <div className="flex items-center space-x-6">            
 
               <motion.a
                 href="https://linkedin.com/in/busrakocarslan"
@@ -75,20 +67,25 @@ export default function Hero() {
               </motion.a>
             </div>
 
-// ...existing code...
+
               
           </motion.div>
         </div>
         
         <div className="md:w-1/2 flex justify-center md:justify-end">
-          <motion.div 
-            className="w-64 h-64 md:w-80 md:h-80 rounded-full bg-gray-200 flex items-center justify-center overflow-hidden"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-          >
-            <span className="text-gray-500">Profile Photo</span>
-          </motion.div>
+        <motion.div 
+          className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          <Image
+            src={avatarImage}
+            alt="Büşra Koçarslan"
+            className="w-full h-full object-cover"
+            priority
+          />
+        </motion.div>
         </div>
       </div>
     </section>

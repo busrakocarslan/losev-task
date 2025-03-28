@@ -40,26 +40,28 @@ export default function Experience() {
   
   return (
     <section id="experience" className="py-16">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-10 text-center">Work Experience</h2>
-        
-        <div className="space-y-12 max-w-3xl mx-auto">
-          {experiences.map((exp, index) => (
-            <div key={index} className="border-l-4 border-blue-500 pl-4 pb-4">
-              <div className="flex flex-wrap justify-between items-start mb-2">
-                <h3 className="text-xl font-bold">{exp.title}</h3>
-                <span className="text-gray-500 text-sm">{exp.period}</span>
-              </div>
-              <p className="text-blue-600 dark:text-blue-400 mb-3">{exp.company}</p>
-              <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
-                {exp.description.map((item, idx) => (
-                  <li key={idx}>{item}</li>
-                ))}
-              </ul>
+    <div className="container mx-auto px-4">
+      <h2 className="text-3xl font-bold mb-10 text-center text-[#96476e] dark:text-[#FF1493]">
+        Work Experience
+      </h2>
+      
+      <div className="space-y-12 max-w-3xl mx-auto">
+        {experiences.map((exp, index) => (
+          <div key={index} className="border-l-4 border-[#96476e] dark:border-[#FF1493] pl-4 pb-4">
+            <div className="flex flex-wrap justify-between items-start mb-2">
+              <h3 className="text-xl font-bold text-[#96476e] dark:text-[#FF1493]">{exp.title}</h3>
+              <span className="text-gray-500 text-sm">{exp.period}</span>
             </div>
-          ))}
-        </div>
+            <p className="text-[#96476e] dark:text-[#FF1493] mb-3">{exp.company}</p>
+            <ul className="space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
+              {exp.description.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
+  </section>
   );
 }
