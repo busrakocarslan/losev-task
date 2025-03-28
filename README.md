@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Büşra Koçarslan Portfolio
 
-## Getting Started
+Bu proje, profesyonel portfolyo websitemi içermektedir. Next.js 13, TailwindCSS ve Framer Motion kullanılarak geliştirilmiştir.
 
-First, run the development server:
+## 🚀 Özellikler
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- Modern ve responsive tasarım
+- Karanlık/Aydınlık mod desteği
+- Türkçe/İngilizce dil desteği
+- Smooth scroll animasyonları
+- Interaktif UI elementleri
+- SEO dostu yapı
+
+## 💻 Kullanılan Teknolojiler
+
+- **Frontend**: Next.js 13, React
+- **Styling**: TailwindCSS
+- **Animasyonlar**: Framer Motion
+- **Deployment**: Vercel
+- **Dil Desteği**: i18n
+- **Icons**: React Icons
+
+## 🎨 Renk Paleti
+
+- Ana Renk (Fusya): 
+  - Light Mode: `#96476e`
+  - Dark Mode: `#FF1493`
+- Arkaplan Renkleri:
+  - Light Mode: `#ffffff`
+  - Dark Mode: `#0a0a0a`
+
+## 📚 Proje Yapısı
+
+```
+losev-task/
+├── app/
+│   ├── components/
+│   │   ├── Header.js
+│   │   ├── Hero.js
+│   │   ├── Experience.js
+│   │   ├── Skills.js
+│   │   └── Contact.js
+│   ├── contexts/
+│   │   └── LanguageContext.js
+│   ├── locales/
+│   │   ├── en.json
+│   │   └── tr.json
+│   └── page.tsx
+├── public/
+│   └── assets/
+└── styles/
+    └── globals.css
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🔍 Komponentler
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Header
+- Responsive navigasyon menüsü
+- Dil değiştirme özelliği
+- Smooth scroll desteği
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Hero
+- Animasyonlu giriş
+- Sosyal medya bağlantıları
+- Profil fotoğrafı
 
-## Learn More
+### Skills
+- Grid layout ile yetenek kategorileri
+- Animasyonlu yetenek kartları
+- Responsive tasarım
 
-To learn more about Next.js, take a look at the following resources:
+### Experience
+- İş deneyimi zaman çizelgesi
+- Detaylı pozisyon açıklamaları
+- Responsive tasarım
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Contact
+- İletişim bilgileri
+- Sosyal medya linkleri
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## 📸 Ekran Görüntüleri
+
+
+
