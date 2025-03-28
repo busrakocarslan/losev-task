@@ -74,6 +74,8 @@ losev-task/
 - Detaylı pozisyon açıklamaları
 - Responsive tasarım
 
+![Experinende]
+
 ### Contact
 - İletişim bilgileri
 - Sosyal medya linkleri
@@ -82,7 +84,15 @@ losev-task/
 
 
 
-## 📸 Ekran Görüntüleri
+### Ana Sayfa
+![Ana Sayfa Ekranı](/public/screenshots/losevHome.png)
+
+### Yetenekler Bölümü
+![Yetenekler Bölümü](/public/screenshots/losevSkills.png)
+
+### Deneyim Bölümü
+![Deneyim Bölümü](/public/screenshots/experienceHome.png)
+
 
 
 
