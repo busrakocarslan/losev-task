@@ -1,12 +1,22 @@
 "use client";
 
 import { useLanguage } from '../contexts/LanguageContext';
+import AnimatedBacground from './backgrounds/AnimatedBacground';
 
 export default function Hero() {
   const { t } = useLanguage();
   
   return (
     <section id="about" className="pt-24 pb-16 min-h-screen flex items-center">
+      <AnimatedBacground 
+        color1="rgba(67, 217, 173, 0.2)"
+        color2="rgba(147, 51, 234, 0.2)"
+        size1={500}
+        size2={400}
+        blur={50}
+        duration1={15}
+        duration2={20}
+      />
       <div className="container mx-auto px-4 md:flex md:items-center md:justify-between">
         <div className="md:w-1/2 mb-10 md:mb-0">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
