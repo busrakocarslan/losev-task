@@ -3,8 +3,31 @@
 
 
 :root {
+  /* Ana renkler - Fusya tonları */
+  --primary: #96476e;    /* Parlak fusya */
+  --primary-dark: #d4214b;  /* Koyu fusya */
+  --primary-light: #FF69B4;  /* Açık fusya */
+  
+  --accent: #FF1493;    /* Deep pink */
+  --accent-dark: #DB7093;  /* Pale violet red */
+  --accent-light: #FFB6C1;  /* Light pink */
+  
+  /* Arka plan ve metin renkleri */
   --background: #ffffff;
   --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+    --primary: #FF1493;    /* Dark mode için daha parlak fusya */
+    --primary-dark: #DB007C;
+    --primary-light: #FF69B4;
+    --accent: #FF0080;
+    --accent-dark: #C60063;
+    --accent-light: #FFB6C1;
+  }
 }
 
 @theme inline {
@@ -14,12 +37,7 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+
 
 body {
   background: var(--background);
@@ -75,3 +93,41 @@ body {
   right: 25%;
   transform: translate(150%, -50%);
 }
+/* ...existing code... */
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.btn-primary {
+  @apply px-6 py-3 rounded-lg transition-colors;
+  background-color: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-outline {
+  @apply px-6 py-3 rounded-lg transition-colors;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+/* Link styles */
+.nav-link {
+  @apply transition-colors;
+  color: var(--foreground);
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
