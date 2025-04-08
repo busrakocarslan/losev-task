@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useLanguage } from "../contexts/LanguageContext";
 import { motion, animate } from "framer-motion";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const { language, setLanguage, t } = useLanguage();
@@ -46,7 +47,7 @@ export default function Header() {
           <motion.a
             href="#about"
             onClick={(e) => handleNavClick(e, "about")}
-            className="hover:text-[#96476e] dark:hover:text-[#FF1493] transition-colors"
+            className="hover:text-[#96476e] dark:text-white dark:hover:text-[#FF1493] transition-colors"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -55,7 +56,7 @@ export default function Header() {
           <motion.a
             href="#experience"
             onClick={(e) => handleNavClick(e, "experience")}
-            className="hover:text-[#96476e] dark:hover:text-[#FF1493] transition-colors"
+            className="hover:text-[#96476e] dark:text-white dark:hover:text-[#FF1493] transition-colors"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -64,7 +65,7 @@ export default function Header() {
           <motion.a
             href="#skills"
             onClick={(e) => handleNavClick(e, "skills")}
-            className="hover:text-[#96476e] dark:hover:text-[#FF1493] transition-colors"
+            className="hover:text-[#96476e] dark:text-white dark:hover:text-[#FF1493] transition-colors"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
@@ -82,17 +83,18 @@ export default function Header() {
           <motion.a
             href="#contact"
             onClick={(e) => handleNavClick(e, "contact")}
-            className="hover:text-[#96476e] dark:hover:text-[#FF1493] transition-colors"
+            className="hover:text-[#96476e]  dark:text-white dark:hover:text-[#FF1493] transition-colors"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }}
           >
             {t("nav.contact")}
           </motion.a>
+          <ThemeToggle />
 
           <motion.button
             onClick={toggleLanguage}
             className="px-4 py-1 border border-[#96476e] dark:border-[#FF1493] rounded-md 
-                     hover:bg-[#96476e] dark:hover:bg-[#FF1493] hover:text-white 
+                     hover:bg-[#96476e] dark:hover:bg-[#FF1493] dark:text-white hover:text-white 
                      transition-colors"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

@@ -71,8 +71,8 @@ export default function Experience() {
   };
   
   return (
-    <section id="experience" className="py-16">
-      <div className="container mx-auto px-4">
+    <section id="experience" className="py-16 bg-white dark:bg-gray-800">
+      <div className="container mx-auto px-4 ">
         <h2 className="text-3xl font-bold mb-10 text-center text-[#96476e] dark:text-[#FF1493]">
           {t('experience.title')}
         </h2>

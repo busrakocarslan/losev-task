@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 
 
 :root {
@@ -28,6 +30,10 @@
     --accent-dark: #C60063;
     --accent-light: #FFB6C1;
   }
+  
+}
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 @theme inline {

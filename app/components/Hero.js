@@ -10,7 +10,7 @@ export default function Hero() {
   const { t } = useLanguage();
   
   return (
-    <section id="about" className="pt-24 pb-16 min-h-screen flex items-center relative">
+    <section id="about" className="pt-24 pb-16 min-h-screen flex items-center relative bg-white dark:bg-gray-800">
       <AnimatedBacground 
          color1="rgba(67, 217, 173, 0.2)"  
          color2="rgba(147, 51, 234, 0.2)"   
