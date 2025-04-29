@@ -67,6 +67,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://busrakocarslan.com" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
+        <meta name="google-site-verification" content="JzNVH27jeyDfccM8k-U4LFJUHtEj64TNse38pyXjCEU" />
         <meta name="keywords" content="Büşra Koçarslan, Beray, yazılım, avukat, React, Next.js, Node.js, Full Stack Developer" />
       </head>
       <body
