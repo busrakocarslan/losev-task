@@ -16,23 +16,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Büşra Koçarslan | Full Stack Developer | Yazılım Uzmanı | Beray",
-  description: "Büşra Koçarslan - Full Stack Developer, yazılım uzmanı. Beray, avukat ve yazılım konularında deneyimli. React, Node.js, ve Next.js uzmanlığıyla projelerinize değer katın.",
-  keywords: ["Büşra Koçarslan", "Beray", "yazılım", "avukat", "Full Stack Developer", "React Developer", "Next.js Developer", "Frontend Developer", "JavaScript Developer", "Web Developer"],
-  authors: [{ name: "Büşra Koçarslan" }, { name: "Beray" }],
-  creator: "Büşra Koçarslan",
-  publisher: "Büşra Koçarslan ve Beray",
+  title: "Beray Büşra Koçarslan | Full Stack Developer | Yazılım Uzmanı",
+  description: "Beray Büşra Koçarslan - Full Stack Developer, yazılım uzmanı. React, Node.js, ve Next.js uzmanlığıyla projelerinize değer katın.",
+  keywords: ["Beray Büşra Koçarslan", "Beray", "Büşra Koçarslan", "Full Stack Developer", "React Developer", "Next.js Developer", "Frontend Developer", "JavaScript Developer", "Web Developer"],
+  authors: [{ name: "Beray Büşra Koçarslan" }],
+  creator: "Beray Büşra Koçarslan",
+  publisher: "Beray Büşra Koçarslan",
   openGraph: {
-    title: "Büşra Koçarslan | Full Stack Developer | Yazılım Uzmanı | Beray",
-    description: "Büşra Koçarslan ve Beray - Full Stack Developer, yazılım uzmanı ve avukat işbirliği. React, Node.js, ve Next.js projeleriniz için çözümler.",
+    title: "Beray Büşra Koçarslan | Full Stack Developer | Yazılım Uzmanı",
+    description: "Beray Büşra Koçarslan - Full Stack Developer, yazılım uzmanı. React, Node.js, ve Next.js uzmanlığıyla projelerinize değer katın.",
     url: "https://busrakocarslan.com",
-    siteName: "Büşra Koçarslan ve Beray Portfolio",
+    siteName: "Beray Büşra Koçarslan Portfolio",
     images: [
       {
-        url: "/opengraph-image.jpg", // Bu dosyayı public klasörüne eklemelisiniz
+        url: "/opengraph-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Büşra Koçarslan - Full Stack Developer ve Beray - Avukat/Yazılım Uzmanı",
+        alt: "Beray Büşra Koçarslan - Full Stack Developer",
       },
     ],
     locale: "tr_TR",
@@ -40,9 +40,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Büşra Koçarslan ve Beray | Yazılım & Hukuk",
-    description: "Full Stack Developer ve avukatlık uzmanlığı. Yazılım ve hukuk alanlarında kaliteli hizmet.",
-    images: ["/twitter-image.jpg"], // Bu dosyayı public klasörüne eklemelisiniz
+    title: "Beray Büşra Koçarslan | Full Stack Developer",
+    description: "Beray Büşra Koçarslan - Full Stack Developer ve yazılım uzmanı",
+    images: ["/twitter-image.jpg"],
   },
   robots: {
     index: true,

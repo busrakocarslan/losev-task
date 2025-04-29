@@ -12,7 +12,8 @@ export default function Hero() {
   const personSchema = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Büşra Koçarslan",
+    "name": "Beray Büşra Koçarslan",
+    "alternateName": ["Beray", "Büşra Koçarslan"],
     "jobTitle": "Full Stack Developer",
     "description": "Full Stack Developer ve yazılım uzmanı. Beray ile ortak çalışmalar yürütmektedir.",
     "image": "https://busrakocarslan.com/profile-image.jpg",

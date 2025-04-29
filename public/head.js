@@ -1,7 +1,7 @@
 export default function Head() {
     return (
       <>
-        <title>Büşra Koçarslan | Full Stack Developer</title>
+        <title> Beray Büşra Koçarslan | Full Stack Developer</title>
         <meta name="description" content="Büşra Koçarslan - Full Stack Developer with expertise in React, Node.js, and Next.js. Check out my portfolio and projects." />
         <meta name="keywords" content="Beray Büşra Koçarslan, Full Stack Developer, React, Next.js, JavaScript, TypeScript, Frontend Developer" />
         <meta name="author" content="Büşra Koçarslan" />
